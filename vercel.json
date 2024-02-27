@@ -3,14 +3,14 @@
     "routes": [
       { "handle": "filesystem" },
       {
-        "src": "/enviar-email",
+        "src": "/api/enviar-email",
         "methods": ["POST"],
-        "dest": "/src/server.js"
+        "dest": "/api/server.js"
       },
       {
-        "src": "/teste",
+        "src": "/api/teste",
         "methods": ["GET"],
-        "dest": "/src/server.js"
+        "dest": "/api/server.js"
       }
     ]
   }
