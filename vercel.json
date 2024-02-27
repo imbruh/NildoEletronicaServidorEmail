@@ -11,9 +11,6 @@
         "src": "/api/teste",
         "methods": ["GET"],
         "dest": "/api/index.js"
-      },
-      {
-        "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
       }
     ]
   }
