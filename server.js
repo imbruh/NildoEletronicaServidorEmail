@@ -45,6 +45,10 @@ app.post('/enviar-email', (req, res) => {
     });
 });
 
+app.get('/teste', () => {
+    return 'deu certo o get'
+})
+
 // Iniciar o servidor
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);

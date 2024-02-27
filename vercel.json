@@ -1,8 +1,14 @@
 {
+    "version": 2,
     "routes": [
       {
         "src": "/enviar-email",
         "methods": ["POST"],
+        "dest": "/server.js"
+      },
+      {
+        "src": "/teste",
+        "methods": ["GET"],
         "dest": "/server.js"
       }
     ]
