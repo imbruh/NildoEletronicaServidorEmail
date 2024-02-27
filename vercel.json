@@ -2,6 +2,7 @@
     "routes": [
       {
         "src": "/enviar-email",
+        "methods": ["POST"],
         "dest": "/server.js"
       }
     ]
