@@ -5,13 +5,12 @@
       {
         "src": "/api/enviar-email",
         "methods": ["POST"],
-        "dest": "/api/index.js"
+        "dest": "/dist/server.js"
       },
       {
         "src": "/api/teste",
         "methods": ["GET"],
-        "dest": "/api/index.js"
+        "dest": "/dist/server.js"
       }
     ]
   }
-  
