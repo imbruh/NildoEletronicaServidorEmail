@@ -1,0 +1,9 @@
+{
+    "routes": [
+      {
+        "src": "/enviar-email",
+        "dest": "/server.js"
+      }
+    ]
+  }
+  
