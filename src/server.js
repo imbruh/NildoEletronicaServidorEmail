@@ -46,7 +46,7 @@ app.post('/enviar-email', (req, res) => {
 });
 
 app.get('/teste', () => {
-    return 'deu certo o get'
+    res.send('deu certo o get');
 })
 
 // Iniciar o servidor
