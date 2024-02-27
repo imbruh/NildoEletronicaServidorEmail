@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
 app.use(cors());
 
 // Rota para enviar e-mails
-app.post('/enviar-email', (req, res) => {
+app.post('/api/enviar-email', (req, res) => {
     const { destinatario, assunto, corpo } = req.body;
 
     // Definições do e-mail
@@ -45,7 +45,7 @@ app.post('/enviar-email', (req, res) => {
     });
 });
 
-app.get('/teste', () => {
+app.get('/api/teste', () => {
     res.send('deu certo o get');
 })
 
