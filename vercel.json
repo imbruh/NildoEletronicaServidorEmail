@@ -1,16 +1,15 @@
 {
-    "version": 2,
-    "routes": [
-      { "handle": "filesystem" },
+  "version": 2,
+  "builds": [
       {
-        "src": "/api/enviar-email",
-        "methods": ["POST"],
-        "dest": "/dist/server.js"
-      },
-      {
-        "src": "/api/teste",
-        "methods": ["GET"],
-        "dest": "/dist/server.js"
+          "src": "./dist/server.js",
+          "use": "@now/node"
       }
-    ]
-  }
+  ],
+  "routes": [
+      {
+          "src": "/(.*)",
+          "dest": "/dist/server.js"
+      }
+  ]
+}
