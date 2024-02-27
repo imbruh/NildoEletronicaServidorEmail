@@ -45,7 +45,7 @@ app.post('/api/enviar-email', (req, res) => {
     });
 });
 
-app.get('/api/teste', () => {
+app.get('/api/teste', (req, res) => {
     res.send('deu certo o get');
 })
 
