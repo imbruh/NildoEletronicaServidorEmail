@@ -23,14 +23,14 @@ app.use(cors());
 
 // Rota para enviar e-mails
 app.post('/api/enviar-email', (req, res) => {
-    const { destinatario, assunto, corpo } = req.body;
+    const { destinatario, assunto } = req.body;
 
     // Definições do e-mail
     const mailOptions = {
         from: process.env.API_EMAIL,
         to: destinatario,
         subject: assunto,
-        text: corpo
+        text: 'A senha do seu sistema é: ' + process.env.API_SENHA_USUARIO
     };
 
     // Enviar e-mail
